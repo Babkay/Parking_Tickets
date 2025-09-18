@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weekly Parking Rates by Area</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Average Parking Rates by Day/Time and Area</h2>
+<button id="openModalBtn">📘 View Instructions</button>
+  <!-- Modal -->
+<div id="instructionModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2> User Instructions</h2>
+      <ol>
+        <li><strong>Select an Area:</strong> Use the dropdown menu.</li>
+        <li><strong>X-Axis:</strong> Displays day and time periods.</li>
+        <li><strong>Y-Axis:</strong> Shows average rate in dollars.</li>
+        <li><strong>Hover:</strong> Tooltip for details and glowing line highlight.</li>
+        <li><strong>Legend:</strong> Color guide for areas (when All Areas is selected).</li>
+      </ol>
+    </div>
+  </div>
+  <label for="areaSelect">Select Area:</label>
+  <select id="areaSelect"></select>
+  <div id="chart"></div>
+  <div id="legend"></div>
+  <div id="tooltip" class="hidden"></div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script.js"></script>
+  
+
+
+</body>
+</html>

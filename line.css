@@ -1,0 +1,224 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 40px;
+  color: #333;
+}
+
+/* Center title */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn {
+  padding: 10px 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin: 0 8px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Chart Container */
+#chart {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Responsive SVG container */
+.svg-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%; /* Maintain 2:1 aspect ratio (adjustable) */
+  height: 0;
+  overflow: hidden;
+}
+
+.svg-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Dropdown */
+select#areaSelect {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-left: 8px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Axis labels */
+.axis-label {
+  font-size: 12px;
+  fill: #333;
+}
+
+.line {
+  fill: none;
+  stroke-width: 2px;
+}
+
+circle {
+  cursor: pointer;
+}
+
+/* Tooltip */
+#tooltip {
+  position: absolute;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 13px;
+  pointer-events: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Legend */
+#legend {
+  max-width: 900px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+.legend-color {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+}
+
+.line.glow {
+  filter: drop-shadow(0 0 4px rgba(0, 123, 255, 0.6));
+  stroke-linejoin: round;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 2em;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 8px;
+}
+
+.close {
+  float: right;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1000px) {
+  body {
+    padding: 30px 20px;
+  }
+
+  .modal-content {
+    width: 80%;
+    margin: 15% auto;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px 15px;
+  }
+
+  .axis-label {
+    font-size: 11px;
+  }
+
+  #tooltip {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .legend-item {
+    font-size: 12px;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 20% auto;
+    padding: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 15px 10px;
+  }
+
+  .axis-label {
+    font-size: 10px;
+  }
+
+  #legend {
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .legend-item {
+    font-size: 11px;
+  }
+
+  .legend-color {
+    width: 12px;
+    height: 12px;
+  }
+
+  .modal-content {
+    padding: 1em;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  select#areaSelect {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+}

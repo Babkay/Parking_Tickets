@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weekly Parking Rates by Area</title>
+  <link rel="stylesheet" href="line.css">
+</head>
+<body>
+
+  <!-- Top Buttons -->
+  <div class="top-buttons" style="text-align: center; margin-bottom: 20px;">
+    <button onclick="window.location.href='index.html'" class="btn">← Back to Home</button>
+    <button id="openModalBtn" class="btn">📘 View Instructions</button>
+  </div>
+
+  <!-- Title -->
+  <h2 style="text-align: center;">Average Parking Rates by Day/Time and Area</h2>
+
+  <!-- Controls -->
+  <div class="control-container" style="text-align: center; margin: 15px 0;">
+    <label for="areaSelect">Select Area:</label>
+    <select id="areaSelect"></select>
+  </div>
+
+  <!-- Chart -->
+  <div id="chart" class="svg-container">
+    <!-- SVG will be appended here by D3 -->
+  </div>
+
+  <!-- Legend -->
+  <div id="legend"></div>
+
+  <!-- Tooltip -->
+  <div id="tooltip" class="hidden"></div>
+
+  <!-- Modal -->
+  <div id="instructionModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>User Instructions</h2>
+      <ol>
+        <li><strong>Select an Area:</strong> Use the dropdown to filter data.</li>
+        <li><strong>X-Axis:</strong> Displays day and time intervals.</li>
+        <li><strong>Y-Axis:</strong> Average parking rate in dollars.</li>
+        <li><strong>Hover:</strong> View detailed values and highlight the selected line.</li>
+        <li><strong>Legend:</strong> Shows color codes for each area (when all areas are shown).</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Description -->
+  <div style="max-width: 900px; margin: 30px auto; font-size: 16px; line-height: 1.6; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+    <p>This interactive line chart shows how average hourly parking meter rates in Vancouver vary across different times of day and days of the week. It helps answer two key questions:</p>
+    <ul>
+      <li><strong>1. How do average parking rates change throughout the week?</strong><br>
+        Identify if rates are higher on weekdays vs weekends, or during specific time slots.</li>
+      <li><strong>2. How do rates compare between local areas?</strong><br>
+        Compare locations like Downtown, Mount Pleasant, and Kitsilano to see rate differences.</li>
+    </ul>
+    <p>Use the dropdown to explore individual areas or view all areas together. Hover over the lines to explore detailed rate data.</p>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="line.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f7f7;
+    padding: 30px;
+  }
+  
+  .chart-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  svg {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+  }
+  
+  .bar {
+    fill: #4285F4;
+  }
+  
+  .bar:hover {
+    fill: #FBBC05;
+  }
+  
+  .axis-label {
+    font-size: 14px;
+    fill: #333;
+  }
+  

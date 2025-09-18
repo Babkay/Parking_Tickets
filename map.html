@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vancouver Parking Rates Choropleth</title>
+  <link rel="stylesheet" href="map.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+
+  <!-- Back Button -->
+  <button onclick="window.location.href='index.html'" class="btn">← Back to Home</button>
+
+  <!-- Header -->
+  <div class="chart-header">
+    <h1 class="chart-title">Vancouver Parking Rate Analysis</h1>
+  </div>
+
+  <!-- Map -->
+  <div id="map"></div>
+  <div id="tooltip" class="hidden"></div>
+
+  <!-- Intro Paragraph -->
+  <p class="chart-intro">
+    This interactive choropleth map reveals parking meter rate variations across Vancouver neighborhoods,
+    addressing two critical questions:
+    <br /><br />
+    <strong>1. Which areas have the highest and lowest parking rates?</strong><br />
+    The color-coded design instantly highlights pricing extremes, from affordable zones to premium areas.
+    <br /><br />
+    <strong>2. Where do pricing clusters emerge?</strong><br />
+    Geographic patterns become clear, showing whether high-rate meters concentrate in commercial districts
+    or tourist hotspots.
+    <br /><br />
+    Hover over neighborhoods to view exact rates, with darker shades indicating higher prices. The legend provides
+    quick reference for rate ranges across the city.
+  </p>
+
+  <!-- Scripts -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="map.js"></script>
+
+</body>
+</html>

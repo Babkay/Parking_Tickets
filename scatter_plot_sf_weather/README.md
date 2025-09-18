@@ -1,0 +1,1 @@
+This scatter plot visualizes the relationship between weekly historical temperatures in San Francisco. The data comes from the San Francisco Opendata Portal [Historical Temperature in SF by Week](https://datasf.org/opendata/)

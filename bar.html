@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vancouver Parking Rates Comparison | Bar Chart</title>
+  <link rel="stylesheet" href="bar.css">
+  <link rel="icon" href="favicon.ico">
+
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="btn">← Back to Home</a>
+    
+    <h1>Vancouver Neighborhood Parking Rate Comparison</h1>
+    
+    
+    
+    <div class="controls">
+      <label for="areaSelect">Filter by Neighborhood:</label>
+      <select id="areaSelect">
+        <option value="All">All Neighborhoods</option>
+      </select>
+    </div>
+    
+    <div id="chart-container">
+      <div id="chart"></div>
+    </div>
+    
+    <div id="tooltip" class="hidden"></div>
+    <div id="legend"></div>
+  </div>
+
+  <div class="intro">
+    <p>This interactive bar chart compares parking meter rates across Vancouver neighborhoods, helping answer:</p>
+    
+    <p><strong>1. Which areas have the highest and lowest weekday rates?</strong><br>
+    Bars are ranked by price, showing clear cost differences between neighborhoods.</p>
+    
+    <p><strong>2. Are there geographic patterns in parking costs?</strong><br>
+    Color-coding reveals whether certain districts consistently charge higher rates.</p>
+    
+    <p>Use the dropdown filter to focus on specific areas, and hover over bars for detailed rate information.</p>
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="bar.js"></script>
+</body>
+</html>

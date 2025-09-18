@@ -1,0 +1,27 @@
+rect {
+  fill: steelblue;
+}
+
+text {
+  font-family: sans-serif;
+}
+
+.tick text {
+  font-size: 2.7em;
+  fill: #635f5d;
+}
+
+.tick line {
+  stroke: #c0c0bb;
+}
+
+.axis-label {
+  font-size: 3em;
+  fill: #8e8883;
+}
+
+.title {
+  font-size: 3em;
+  fill: #635f5d;
+}
+

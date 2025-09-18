@@ -1,0 +1,32 @@
+#map {
+  width: 100%; /* Map will take up 100% of the parent container's width */
+  height: auto; /* Height will adjust automatically based on aspect ratio */
+  
+}
+
+.responsive-svg {
+  width: 100%; /* Ensure SVG scales to fit its container */
+  height: auto; /* Maintain aspect ratio */
+  border: black;
+}
+
+#tooltip {
+  position: absolute;
+  background: white;
+  border: 1px solid #0e0d0d;
+  padding: 8px;
+  border-radius: 4px;
+  pointer-events: none;
+  font-size: 14px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.legend {
+  font-size: 12px;
+  fill: #333;
+}
